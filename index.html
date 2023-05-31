@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Note Log</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Note Log</h1>
+  </header>
+
+  <div id="container">
+    <div id="sidebar">
+      <h2 style="color: #fff;">Categories</h2>
+      <ul id="category-list">
+        <li class="category active">All</li>
+        <li class="category">Work</li>
+        <li class="category">Personal</li>
+        <li class="category">Ideas</li>
+      </ul>
+    </div>
+
+    <div id="main">
+      <div id="notes">
+        <h2 class="category-title">All Notes</h2>
+        <ul id="note-list">
+          <li class="note">
+            <h3 class="note-title">Meeting Notes</h3>
+            <p class="note-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <span class="note-date">2023-05-22</span>
+          </li>
+          <li class="note">
+            <h3 class="note-title">Shopping List</h3>
+            <p class="note-content">Milk, eggs, bread, and fruits.</p>
+            <span class="note-date">2023-05-21</span>
+          </li>
+          <li class="note">
+            <h3 class="note-title">Project Ideas</h3>
+            <p class="note-content">Brainstorming for new project ideas.</p>
+            <span class="note-date">2023-05-20</span>
+          </li>
+        </ul>
+      </div>
+
+      <div id="editor">
+        <h2>Create Note</h2>
+        <input type="text" id="note-title" placeholder="Note Title">
+        <textarea id="note-content" placeholder="Note Content"></textarea>
+        <button id="save-btn">Save</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
